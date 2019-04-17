@@ -1,0 +1,28 @@
+#app {
+    display: flex;
+    flex-flow: row wrap;
+    
+    #eat {
+        width: 48%;
+        height: 400px;
+        background-color:blue;
+    }
+
+    #play {
+        width: 48%;
+        height: 400px;
+        background-color:purple;
+    }
+
+    #sleep {
+        width: 48%;
+        height: 400px;
+        background-color:red;
+    }
+
+    #fight {
+        width: 48%;
+        height: 400px;
+        background-color:green;
+    }
+}
