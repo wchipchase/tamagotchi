@@ -5,10 +5,10 @@ import play from './components/play';
 import sleep from './components/sleep';
 
 const init = () => {
-  eat.domStringBuilder();
-  fight.domStringBuilder();
-  play.domStringBuilder();
-  sleep.domStringBuilder();
+  eat.eatDomStringBuilder();
+  fight.fightDomStringBuilder();
+  play.playDomStringBuilder();
+  sleep.sleepDomStringBuilder();
 };
 
 init();

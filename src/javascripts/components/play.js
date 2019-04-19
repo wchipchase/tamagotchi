@@ -1,39 +1,39 @@
 import util from '../helpers/util';
 
-let full = 100;
+let play = 50;
 
-const addFood = () => {
-  if (full <= 90) {
-    full += 10;
-    util.printToDom('full', full);
+const addSuperFun = () => {
+  if (play <= 50) {
+    play += 50;
+    util.printToDom('play', play);
   } else {
-    console.error('Full cannot exceed 100');
+    console.error('play cannot exceed 100');
   }
 };
 
-const subtractFood = () => {
-  if (full >= 3) {
-    full -= 3;
-    util.printToDom('full', full);
+const addFun = () => {
+  if (play <= 98) {
+    play += 2;
+    util.printToDom('play', play);
   } else {
-    console.error('Full cannot be a negative');
+    console.error('play cannot exceed 100');
   }
 };
 
-const eatButtonEvents = () => {
-  document.getElementById('healthy').addEventListener('click', addFood);
-  document.getElementById('unhealthy').addEventListener('click', subtractFood);
+const playButtonEvents = () => {
+  document.getElementById('fun').addEventListener('click', addFun);
+  document.getElementById('super-fun').addEventListener('click', addSuperFun);
 };
 
-const domStringBuilder = () => {
+const playDomStringBuilder = () => {
   let domString = '';
-  domString += '<h2 id="h2-eat">Eat</h2>';
-  domString += '<button id="healthy">Healthy</button>';
-  domString += '<button id="unhealthy">Unhealthy</button>';
-  domString += `<h2 id="full">Fullness: ${full}</h2>`;
+  domString += '<h2 id="h2-play">Play</h2>';
+  domString += '<button id="fun">Fun</button>';
+  domString += '<button id="super-fun">Super Fun</button>';
+  domString += `<h2 id="play">Playfulness: ${play}</h2>`;
 
-  util.printToDom('eat', domString);
-  eatButtonEvents();
+  util.printToDom('play', domString);
+  playButtonEvents();
 };
 
-export default { domStringBuilder };
+export default { playDomStringBuilder };
