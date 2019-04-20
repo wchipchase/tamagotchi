@@ -1,5 +1,6 @@
 import util from '../helpers/util';
 
+
 let sleep = 50;
 
 const addNap = () => {
@@ -37,3 +38,4 @@ const sleepDomStringBuilder = () => {
 };
 
 export default { sleepDomStringBuilder };
+

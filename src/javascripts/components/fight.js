@@ -26,6 +26,7 @@ const fightButtonEvents = () => {
 };
 
 const fightDomStringBuilder = () => {
+
   let domString = '';
   domString += '<h2 id="h2-fight">Fight</h2>';
   domString += '<button id="runAway">Run Away</button>';
@@ -37,3 +38,4 @@ const fightDomStringBuilder = () => {
 };
 
 export default { fightDomStringBuilder };
+

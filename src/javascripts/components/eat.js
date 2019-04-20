@@ -1,5 +1,6 @@
 import util from '../helpers/util';
 
+
 let full = 100;
 
 const addFood = () => {
@@ -26,6 +27,7 @@ const eatButtonEvents = () => {
 };
 
 const eatDomStringBuilder = () => {
+
   let domString = '';
   domString += '<h2 id="h2-eat">Eat</h2>';
   domString += '<button id="healthy">Healthy</button>';
@@ -37,3 +39,4 @@ const eatDomStringBuilder = () => {
 };
 
 export default { eatDomStringBuilder };
+
