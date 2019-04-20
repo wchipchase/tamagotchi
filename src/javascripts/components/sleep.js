@@ -5,7 +5,7 @@ let sleep = 50;
 const addNap = () => {
   if (sleep <= 50) {
     sleep += 50;
-    util.printToDom('sleep', sleep);
+    util.printToDom('showSleep', sleep);
   } else {
     console.error('sleep cannot exceed 100');
   }
@@ -14,7 +14,7 @@ const addNap = () => {
 const addSlumber = () => {
   if (sleep <= 40) {
     sleep += 60;
-    util.printToDom('sleep', sleep);
+    util.printToDom('showSleep', sleep);
   } else {
     console.error('sleep cannot exceed 100');
   }
@@ -30,7 +30,7 @@ const sleepDomStringBuilder = () => {
   domString += '<h2 id="h2-sleep">Sleep</h2>';
   domString += '<button id="nap">Nap</button>';
   domString += '<button id="slumber">Slumber</button>';
-  domString += `<h2 id="sleep">Sleepiness: ${sleep}</h2>`;
+  domString += `<h2 id="showSleep">Sleepiness: ${sleep}</h2>`;
 
   util.printToDom('sleep', domString);
   sleepButtonEvents();

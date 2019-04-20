@@ -5,7 +5,7 @@ let fight = 100;
 const addStrength = () => {
   if (fight <= 99) {
     fight += 1;
-    util.printToDom('fight', fight);
+    util.printToDom('showStrength', fight);
   } else {
     console.error('fight cannot exceed 100');
   }
@@ -14,7 +14,7 @@ const addStrength = () => {
 const subtractStrength = () => {
   if (fight >= 10) {
     fight -= 10;
-    util.printToDom('fight', fight);
+    util.printToDom('showStrength', fight);
   } else {
     console.error('fight cannot be a negative');
   }
@@ -30,7 +30,7 @@ const fightDomStringBuilder = () => {
   domString += '<h2 id="h2-fight">Fight</h2>';
   domString += '<button id="runAway">Run Away</button>';
   domString += '<button id="commitViolence">Commit Violence</button>';
-  domString += `<h2 id="fight">Fightness: ${fight}</h2>`;
+  domString += `<h2 id="showStrength">Fightness: ${fight}</h2>`;
 
   util.printToDom('fight', domString);
   fightButtonEvents();

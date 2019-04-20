@@ -5,7 +5,7 @@ let play = 50;
 const addSuperFun = () => {
   if (play <= 50) {
     play += 50;
-    util.printToDom('play', play);
+    util.printToDom('showPlay', play);
   } else {
     console.error('play cannot exceed 100');
   }
@@ -14,7 +14,7 @@ const addSuperFun = () => {
 const addFun = () => {
   if (play <= 98) {
     play += 2;
-    util.printToDom('play', play);
+    util.printToDom('showPlay', play);
   } else {
     console.error('play cannot exceed 100');
   }
@@ -30,7 +30,7 @@ const playDomStringBuilder = () => {
   domString += '<h2 id="h2-play">Play</h2>';
   domString += '<button id="fun">Fun</button>';
   domString += '<button id="super-fun">Super Fun</button>';
-  domString += `<h2 id="play">Playfulness: ${play}</h2>`;
+  domString += `<h2 id="showPlay">Playfulness: ${play}</h2>`;
 
   util.printToDom('play', domString);
   playButtonEvents();
