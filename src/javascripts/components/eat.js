@@ -1,8 +1,5 @@
 import util from '../helpers/util';
 
-// const healthyBtn = document.getElementById('healthy');
-// const unhealthyBtn = document.getElementById('unhealthy');
-// const eatCounter = document.getElementById('eat-counter');
 
 let full = 100;
 
@@ -29,7 +26,8 @@ const eatButtonEvents = () => {
   document.getElementById('unhealthy').addEventListener('click', subtractFood);
 };
 
-const domStringBuilder = () => {
+const eatDomStringBuilder = () => {
+
   let domString = '';
   domString += '<h2 id="h2-eat">Eat</h2>';
   domString += '<button id="healthy">Healthy</button>';
@@ -40,9 +38,5 @@ const domStringBuilder = () => {
   eatButtonEvents();
 };
 
-// healthyBtn.onclick = function () {
-//   full += 10;
-//   eatCounter.innerHTML = full;
-// };
+export default { eatDomStringBuilder };
 
-export default { domStringBuilder };

@@ -5,10 +5,11 @@ import sleep from './components/sleep';
 import '../styles/main.scss';
 
 const init = () => {
-  eat.domStringBuilder();
-  play.domStringBuilder();
-  fight.domStringBuilder();
-  sleep.domStringBuilder();
+  eat.eatDomStringBuilder();
+  fight.fightDomStringBuilder();
+  play.playDomStringBuilder();
+  sleep.sleepDomStringBuilder();
+
 };
 
 init();

@@ -1,3 +1,7 @@
+h2 {
+    color: white;
+}
+
 #app {
     display: flex;
     flex-flow: row wrap;
@@ -6,6 +10,10 @@
         width: 48%;
         height: 400px;
         background-color:blue;
+        #healthy {
+            align-content: flex-end;
+            justify-content: flex-end;
+        }
     }
 
     #play {
