@@ -27,7 +27,7 @@ const sleepButtonEvents = () => {
 
 const sleepDomStringBuilder = () => {
   let domString = '';
-  domString += '<h2 id="h2-sleep">sleep</h2>';
+  domString += '<h2 id="h2-sleep">Sleep</h2>';
   domString += '<button id="nap">Nap</button>';
   domString += '<button id="slumber">Slumber</button>';
   domString += `<h2 id="sleep">Sleepiness: ${sleep}</h2>`;
