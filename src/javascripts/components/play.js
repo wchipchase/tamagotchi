@@ -1,11 +1,11 @@
 import util from '../helpers/util';
 
-let play = 50;
+let play = Math.floor(Math.random() * 50);
 
 const addSuperFun = () => {
   if (play <= 50) {
     play += 50;
-    util.printToDom('showPlay', play);
+    util.printToDom('showPlay', `Playfulness: ${play}`);
   } else {
     console.error('play cannot exceed 100');
   }
@@ -14,7 +14,7 @@ const addSuperFun = () => {
 const addFun = () => {
   if (play <= 98) {
     play += 2;
-    util.printToDom('showPlay', play);
+    util.printToDom('showPlay', `Playfulness: ${play}`);
   } else {
     console.error('play cannot exceed 100');
   }
@@ -36,4 +36,4 @@ const playDomStringBuilder = () => {
   playButtonEvents();
 };
 
-export default { playDomStringBuilder };
+export default { playDomStringBuilder, play };

@@ -1,11 +1,11 @@
 import util from '../helpers/util';
 
-let sleep = 50;
+let sleep = Math.floor(Math.random() * 50);
 
 const addNap = () => {
   if (sleep <= 50) {
     sleep += 50;
-    util.printToDom('showSleep', sleep);
+    util.printToDom('showSleep', `Sleepiness: ${sleep}`);
   } else {
     console.error('sleep cannot exceed 100');
   }
@@ -14,7 +14,7 @@ const addNap = () => {
 const addSlumber = () => {
   if (sleep <= 40) {
     sleep += 60;
-    util.printToDom('showSleep', sleep);
+    util.printToDom('showSleep', `Sleepiness: ${sleep}`);
   } else {
     console.error('sleep cannot exceed 100');
   }
@@ -36,4 +36,4 @@ const sleepDomStringBuilder = () => {
   sleepButtonEvents();
 };
 
-export default { sleepDomStringBuilder };
+export default { sleepDomStringBuilder, sleep };

@@ -1,11 +1,11 @@
 import util from '../helpers/util';
 
-let fight = 100;
+let fight = Math.floor(Math.random() * 100);
 
 const addStrength = () => {
   if (fight <= 99) {
     fight += 1;
-    util.printToDom('showStrength', fight);
+    util.printToDom('showStrength', `Fightness: ${fight}`);
   } else {
     console.error('fight cannot exceed 100');
   }
@@ -14,7 +14,7 @@ const addStrength = () => {
 const subtractStrength = () => {
   if (fight >= 10) {
     fight -= 10;
-    util.printToDom('showStrength', fight);
+    util.printToDom('showStrength', `Fightness: ${fight}`);
   } else {
     console.error('fight cannot be a negative');
   }
@@ -36,4 +36,4 @@ const fightDomStringBuilder = () => {
   fightButtonEvents();
 };
 
-export default { fightDomStringBuilder };
+export default { fightDomStringBuilder, fight };
