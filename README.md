@@ -2,7 +2,7 @@
 This creates a battle pet with various states
 
 ## Description
-This demonstrates using the dom, javascript, JSON, XHR requests
+This demonstrates using the dom, javascript, JSON, XHR requests, Modules
 
 ## Getting Started
 ```
