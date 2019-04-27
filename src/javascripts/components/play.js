@@ -1,6 +1,8 @@
 import util from '../helpers/util';
 
+
 let play = Math.floor(Math.random() * 50);
+
 
 const addSuperFun = () => {
   if (play <= 50) {
@@ -36,4 +38,6 @@ const playDomStringBuilder = () => {
   playButtonEvents();
 };
 
+
 export default { playDomStringBuilder, play };
+

@@ -1,6 +1,8 @@
 import util from '../helpers/util';
 
+
 let sleep = Math.floor(Math.random() * 50);
+
 
 const addNap = () => {
   if (sleep <= 50) {
@@ -37,3 +39,4 @@ const sleepDomStringBuilder = () => {
 };
 
 export default { sleepDomStringBuilder, sleep };
+

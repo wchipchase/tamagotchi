@@ -1,6 +1,8 @@
 import util from '../helpers/util';
 
+
 let full = Math.floor(Math.random() * 100);
+
 
 const addFood = () => {
   if (full <= 90) {
@@ -26,6 +28,7 @@ const eatButtonEvents = () => {
 };
 
 const eatDomStringBuilder = () => {
+
   let domString = '';
   domString += '<h2 id="h2-eat">Eat</h2>';
   domString += '<button id="healthy">Healthy</button>';
@@ -39,3 +42,4 @@ const eatDomStringBuilder = () => {
 };
 
 export default { eatDomStringBuilder, full };
+
